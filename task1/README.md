@@ -1,3 +1,2 @@
-# Web
-there you can find my web HW
-good luck:)
+# Homework
+the main file is index.html
