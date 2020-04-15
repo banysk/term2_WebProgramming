@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="css/bootstrap.min.css" >
         <title>Minecraft</title>
         <link rel="stylesheet" href="css/styles.css">
+        <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     </head>
     <body>
         <!-- Подключаем jQuery -->
@@ -39,8 +40,30 @@
                     <li class="active">Wait...</li>
                   </ol>
             </div>
+              
+            <div class="container-fluid task">
+                <div>$$\sum_{i=0}^n i^2 = \frac{(n^2+n)(2n+1)}{6}$$
+                </div>
+                <div>
+                    $$\int{(\frac{\sqrt x}{y^3})}$$
+                </div>
+                <div>
+                    $$\lim_{x\to 0}{x^x}$$
+                </div>
+                <center>
+                    <h1>My first SVG</h1>
+                    <svg width="300" height="200">
+                        <rect x="0" y="0" rx="0" ry="0" width="300" height="200" style="fill:white;stroke:black;stroke-width:1;" />
+                        <rect x="0" y="0" rx="0" ry="0" width="20" height="20" fill="black"></rect>
+                        <rect x="0" y="180" rx="0" ry="0" width="20" height="20" fill="black"></rect>
+                        <rect x="280" y="0" rx="0" ry="0" width="20" height="20" fill="black"></rect>
+                        <rect x="280" y="180" rx="0" ry="0" width="20" height="20" fill="black"></rect>
+                        <circle cx="150" cy="100" r="50" stroke="" stroke-width="" fill="red" />
+                    </svg>
+                </center>
+            </div>
 
-              <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                 <div class="modal-dialog" role="document">
                   <div class="modal-content">
                     <div class="modal-header">
@@ -56,7 +79,6 @@
                   </div>
                 </div>
               </div>
-              
         </div>
     </body>
 </html>

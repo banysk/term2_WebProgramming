@@ -19,13 +19,13 @@ body {
     font-family: 'MinecrafterAltRegular';
     font-weight: normal;
     font-style: normal;
-    font-size: 16px;
+    font-size: 20px;
 }
 .text-nav {
     font-family: 'MinecrafterAltRegular';
     font-weight: normal;
     font-style: normal;
-    font-size: 16px;
+    font-size: 14px;
 }
 .mytab {
     background-color: white;
@@ -66,4 +66,29 @@ body {
     font-size: 20px;
     color: black;
     text-align: center;
+}
+.task {
+    background-color: white;
+    border-radius: 25px;
+    padding: 15px;
+    opacity: 0.8;
+}
+.carousel {
+    width: 70%; 
+    margin: 0 auto;
+}
+@media (max-width:1200px) {
+    body {
+        background: url("back_mob.jpg");
+        background-size: 100% auto;
+        background-repeat:no-repeat;
+        background-attachment:fixed;
+        background-position:0px 0px;
+        background-color: black;
+        cursor: default;
+    }
+    .carousel {
+        width:100%;
+        height: auto;
+    }
 }
