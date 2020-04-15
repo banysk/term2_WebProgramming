@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/minecraft" type="text/css"/>
+        <!-- Подключаем Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css" >
+        <title>Minecraft</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link href="/bootstrap4-glyphicons/css/bootstrap-glyphicons.min.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <!-- Подключаем jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <!-- Подключаем Bootstrap JS -->    
+        <script src="js/bootstrap.min.js"></script>
+        <!-- Основной код -->   
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center">
+                    <div class="text-logo" data-toggle="modal" data-target="#myModal">MineCr<span>a</span>ft</div>
+                </div>
+            </div>
+                    
+            <nav class="navbar text-nav">
+                <div class="container-fluid">
+                    <ul class="nav nav-tabs nav-justified">
+                        <li class=""><a href="mainpage.html">Main page</a></li>
+                        <li class=""><a href="versions.html">Versions</a></li>
+                        <li class="active"><a href="images.html">Images</a></li>
+                        <li class="disabled"><a href="#">Wait...</a></li>
+                    </ul>
+                </div>
+            </nav>
+            
+            <div class="container-fluid">
+                <ol class="breadcrumb">
+                    <li class="active">Images</li>
+                  </ol>
+            </div>
+
+            <div id="carousel" class="carousel slide" data-ride="carousel" style="width: 70%; margin: 0 auto">
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img class="d-block w-80" src="images/img1.jpg" alt="...">
+                    </div>
+                    <div class="item">
+                        <img src="images/img2.jpg" alt="...">
+                    </div>
+                    <div class="item">
+                        <img src="images/img3.jpg" alt="...">
+                    </div>
+                    <div class="item">
+                        <img src="images/img4.jpg" alt="...">
+                    </div>
+                    <div class="item">
+                        <img src="images/img5.jpg" alt="...">
+                    </div>
+                </div>
+                <!-- Элементы управления -->
+                <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Предыдущий</span>
+                </a>
+                <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Следующий</span>
+                </a>
+              </div>
+
+              <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h4 class="modal-title text-modal" id="myModalLabel">YOR ARE DIED</h4>
+                    </div>
+                    <div class="modal-body">
+                      <img src="images/creep.jpg" style="width: 100%; height: auto;">
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </body>
+</html>
