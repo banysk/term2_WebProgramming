@@ -45,6 +45,18 @@ body {
     opacity: 0.9;
     border-radius: 0px 0px 10px 10px;
 }
+.dropdown .dropdown {
+    padding: 0;
+}
+.dropdown li a {
+    padding-left: 10px;
+    padding-right: 0;
+}
+.dropdown .dropdown:hover .dropdown-menu {
+    display:block;
+    left: 100%;
+    top: calc(0% - 5px);
+}
 .badge-success {
     background-color: green;
     opacity: 0.8;
@@ -74,13 +86,18 @@ body {
     opacity: 0.8;
 }
 .carousel {
-    width: 70%; 
+    width: 80%; 
     margin: 0 auto;
 }
-@media (max-width:1000px) {
+@media (max-width:1200px) {
     .carousel {
         width:100%;
         height: auto;
+    }
+}
+@media (max-width:600px) {
+    .text-logo {
+        font-size: 50px;
     }
 }
 @media (max-width:359px) {
