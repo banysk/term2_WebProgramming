@@ -33,8 +33,8 @@
           }
         }
 
-        function getRandomInt(min = document.getElementById("min").value, max = document.getElementById("max").value){
-          return (Math.floor(Math.random() * (max - min) + min))
+        function getRandomInt(min = Number(document.getElementById("min").value), max = Number(document.getElementById("max").value)){
+          return min + Math.floor(Math.random()*(max-min));
         }
 
         function btn4(){
