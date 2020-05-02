@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Task</title>
+        <script src="script.js"></script>
+    </head>
+    <body>
+
+       <div align="center">
+        <h3>Площадь фигуры по заданным параметрам. Круг.</h3>
+           <img src="circle1.png" width="15%" style="margin-bottom: 10px;"><br>
+           <img src="circle2.png" width="5%" style="margin-bottom: 10px;"><br>
+           <div style="margin-top: 10px; margin-bottom: 10px;">
+            <span>Радиус:  </span>
+            <input type="number" id="radius">
+            <button type="button" onclick=btn1() id="btn1">Вычислить</button>
+           </div>
+           <div style="margin-top: 10px; margin-bottom: 10px;">
+            <span>Знаков после запятой:  </span>
+            <input type="number" min="1" max="10" id="after1" value="3">
+           </div>
+           <div style="margin-top: 10px; margin-bottom: 10px;">
+            <span>Площадь:  </span>
+           <input type="text" id="result1">
+          </div>
+       </div>
+
+       <div align="center">
+        <h3>Найти сумму первых двадцати элементов последовательности X, X/3, X/5, ....</h3>
+        <div style="margin-top: 10px; margin-bottom: 10px;">
+          <span>Введите Х:  </span>
+          <input type="number" id="x">
+          <button type="button" onclick=btn2() id="btn2">Вычислить</button>
+        </div>
+        <div style="margin-top: 10px; margin-bottom: 10px;">
+          <span>Знаков после запятой:  </span>
+          <input type="number" min="1" max="10" id="after2" value="3">
+         </div>
+        <div style="margin-top: 10px; margin-bottom: 10px;">
+          <span>Результат:  </span>
+          <input type="text" id="result2">
+        </div>
+
+        <div align="center">
+         <h3>Матрица М состоит из 4 строк, 3 столбцов. Вычесть из всех строк, начиная со второй, первую строку.</h3>
+          <div style="margin-top: 10px; margin-bottom: 10px;">
+            <input class="cell" type="text" value="1">
+            <input class="cell" type="text" value="2">
+            <input class="cell" type="text" value="3">
+          </div>
+          <div style="margin-top: 10px; margin-bottom: 10px;">
+            <input class="cell" type="text" value="-3">
+            <input class="cell" type="text" value="-2">
+            <input class="cell" type="text" value="-1">
+          </div>
+          <div style="margin-top: 10px; margin-bottom: 10px;">
+            <input class="cell" type="text" value="3">
+            <input class="cell" type="text" value="2">
+            <input class="cell" type="text" value="1">
+          </div>
+          <div style="margin-top: 10px; margin-bottom: 10px;">
+            <input class="cell" type="text" value="-1">
+            <input class="cell" type="text" value="-2">
+            <input class="cell" type="text" value="-3">
+          </div>
+          <button type="button" onclick=btn3() id="btn2">Вычислить</button>
+        </div>
+
+        <div align="center">
+          <h3>Функции</h3>
+          <div style="margin-top: 10px; margin-bottom: 10px;">
+            <input id="min" type="text" value="0">
+            <input id="max" type="text" value="100">
+            <input id="result3" type="text"><br>
+          </div>
+          <span><button id="btn4" onclick=btn4()>Рандом</button></span>
+        </div>
+
+        <div align="center">
+          <h3>getArray(n)</h3>
+          <div style="margin-top: 10px; margin-bottom: 10px;">
+           <span>n:  </span>
+           <input type="text" id="rand_n" value="10">
+           <input type="text" id="rand_res" style="width: 25%;"><br>
+          </div>
+          <button type="button" onclick=btn5() id="btn5">getArray(n)</button>
+        </div>
+
+        <div align="center">
+          <h3>getResultArray(a)</h3>
+          <div style="margin-top: 10px; margin-bottom: 10px;">
+           <input type="text" id="sorted" style="width: 25%;"><br>
+          </div>
+          <button type="button" onclick=btn6() id="btn6">getResultArray(a)</button>
+        </div>
+        <h3 onclick=console.log(matrix_from(getResultArray(getArray(25)),5))>matrix_from(array, n)</h3>
+    </body>
+</html>
