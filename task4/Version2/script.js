@@ -74,31 +74,8 @@
           }
         }
 
-        function matrix_from(array, n){
-          var c = 0;
-          var matrix = [];
-          for (i = 0; i < n; i++){
-            matrix.push([]);
-          }
-
-          for (row = 0; row < n; row++){
-
-            if (row % 2 == 0){
-              for (i = n - 1; i >= 0; i--){
-              matrix[i][row] = array[c++];
-              }
-            }
-              
-            if (row % 2 == 1){
-              for (i = 0; i < n; i++){
-              matrix[i][row] = array[c++];
-              }
-            }
-          }
-          return matrix;
-        }
-
         var a = [];
+
           function btn5(){
             a = getArray(document.getElementById("rand_n").value);
             document.getElementById("rand_res").value = a;
@@ -106,4 +83,45 @@
 
           function btn6(){
             document.getElementById("sorted").value = getResultArray(a);
+          }
+
+          function matrix_from(){
+            if (a.length == 0) {
+              alert("Используйте getArray()!!!");
+              return;
+            }
+            a = getResultArray(a);
+            var n = Math.floor(a.length**(1/2));
+            var c = 0;
+            var matrix = [];
+            for (i = 0; i < n; i++){
+              matrix.push([]);
+            }
+  
+            for (row = 0; row < n; row++){
+  
+              if (row % 2 == 0){
+                for (i = n - 1; i >= 0; i--){
+                matrix[i][row] = a[c++];
+                }
+              }
+                
+              if (row % 2 == 1){
+                for (i = 0; i < n; i++){
+                matrix[i][row] = a[c++];
+                }
+              }
+            }
+
+            var html = '<table>';
+            for (i = 0; i < n; i++){
+              html += '<tr>';
+              for (j = 0; j < n; j++){
+                html += '<td>'+" "+matrix[i][j]+" "+'</td>'; 
+              }
+              html += '</tr>';
+            }
+            html += '</table>';
+            document.getElementById('add').innerHTML = html;
+            return matrix;
           }
