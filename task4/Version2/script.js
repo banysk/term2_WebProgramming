@@ -82,6 +82,10 @@
           }
 
           function btn6(){
+            if (a.length == 0) {
+              alert("Используйте getArray()!!!");
+              return;
+            }
             document.getElementById("sorted").value = getResultArray(a);
           }
 
