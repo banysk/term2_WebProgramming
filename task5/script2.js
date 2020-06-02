@@ -4,15 +4,15 @@ var list = [
         children: [
             {
                 text: 'Кодомо',
-                children: [{text:'Соник Икс'},{text:'Перепутье игры и драконов'},{text:'Пита-Тэн'}]
+                children: [{ text: 'Соник Икс' }, { text: 'Перепутье игры и драконов' }, { text: 'Пита-Тэн' }]
             },
             {
                 text: 'Сёнэн',
-                children: [{text:'Адский учитель Нубэ'},{text:'Айшилд 21'},{text:'Ария'}]
+                children: [{ text: 'Адский учитель Нубэ' }, { text: 'Айшилд 21' }, { text: 'Ария' }]
             },
             {
                 text: 'Сёдзё',
-                children: [{text:'Белые ночи'},{text:'В песках поющие китята'},{text:'Внеземной малыш'}]
+                children: [{ text: 'Белые ночи' }, { text: 'В песках поющие китята' }, { text: 'Внеземной малыш' }]
             }
         ]
     },
@@ -21,7 +21,7 @@ var list = [
         children: [
             {
                 text: 'Апокалиптика',
-                children: [{text:'Промар'}, {text:'Лазурный путь'}]
+                children: [{ text: 'Промар' }, { text: 'Лазурный путь' }]
             },
             {
                 text: 'Боевик',
@@ -29,20 +29,20 @@ var list = [
             },
             {
                 text: 'Боевые искусства',
-                children: [{text:'Баки'}, {text:'Бамбуковый клинок'}]
+                children: [{ text: 'Баки' }, { text: 'Бамбуковый клинок' }]
             }
         ]
     }
 ]
 
 let body = $('body');
-function create(list){
+function create(list) {
     let ul = $('<ul>').appendTo(body);
-    for (let element of list){
+    for (let element of list) {
         let li = $('<li>').append(element.text);
         ul.append(li);
         body = li
-        if (element.children && element.children != undefined){
+        if (element.children && element.children != undefined) {
             create(element.children);
         }
     }
