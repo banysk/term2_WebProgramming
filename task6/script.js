@@ -1,6 +1,7 @@
 var canvas, ctx, figures = [], idTimer;
 var is_pushed = false;
 var N = 40;
+var LOL = false;
 function random_color() {
     return 'rgb(' + Math.floor(Math.random() * 256) + ','
         + Math.floor(Math.random() * 256) + ',' + Math.floor(Math.random() * 256) + ')';
@@ -192,6 +193,9 @@ function move_all() {
         figures[i].posY += 1.5 * figures[i].dirY * figures[i].speed;
         figures[i].speed += 0.05;
         figures[i].size += 0.1;
+        if (LOL) {
+            figures[i].color = random_color();
+        }
         figures[i].draw(ctx);
         if ((figures[i].posX < 0) || (figures[i].posX > canvas.width) || (figures[i].posY < 0) || (figures[i].posY > canvas.height) || (figures[i].size > N)) {
             figures.splice(i--, 1);
@@ -223,4 +227,8 @@ function move() {
 function stop() {
     clearInterval(idTimer);
     is_pushed = false;
+}
+
+function die() {
+    LOL ? LOL = false : LOL = true;
 }
