@@ -115,7 +115,7 @@ function init() {
     }
 }
 function random_dir_fixed(item) {
-    rand = randomInt(0, 5);
+    rand = randomInt(0, 4);
     if (rand == 0) {
         item.up();
     } else if (rand == 1) {
